@@ -1,6 +1,6 @@
 #CustomerReplyAgent.md
 一套实用且安全的 OpenClaw Skill，专门用于你的房产客户托管维系系统
-#房产客户全自动托管维系系统 - RealEstate ClientForge（OpenClaw）
+# 房产客户全自动托管维系系统 - RealEstate ClientForge（OpenClaw）
 
 基于 OpenClaw 框架开发的多Agent房产运营工作流，实现房源自动发布、客户智能响应、需求深度挖掘与精准维系。
 
@@ -56,3 +56,8 @@
 
 ## 协作说明
 当接收到用户消息时，自动调用本Skill生成回复草稿 → 交由人工审核或直接发布。
+协作说明：
+
+Orchestrator 负责整体调度
+CustomerReplyAgent 是核心回复Skill，嵌入 Responder Agent 使用
+实现 被动回复 + 主动挖掘 + 持续维系 闭环
